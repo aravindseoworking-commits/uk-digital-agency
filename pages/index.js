@@ -36,22 +36,8 @@ export default function Home() {
           </div>
         </section>
 
-        {/* WHY */}
-        <section className="why">
-          <h2>Why Choose Us</h2>
-          <ul>
-            <li>Fast-loading, error-free websites</li>
-            <li>100% UK-focused unique content</li>
-            <li>Transparent reporting & measurable ROI</li>
-            <li>White-glove support and local GEO expertise</li>
-          </ul>
-        </section>
-
         {/* PRICING */}
-        <section className="pricing">
-          <h2>Flexible UK-Friendly Pricing</h2>
-          <PricingTable/>
-        </section>
+        <PricingTable />
 
         {/* PORTFOLIO */}
         <section className="portfolio">
@@ -130,9 +116,35 @@ export default function Home() {
             </div>
           </div>
         </section>
+      </main>
 
-        <footer>
-          <div className="container" style={{padding:'0 24px'}}>
-            <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',flexWrap:'wrap'}}>
-              <div>© {new Date().getFull
+      <footer className="bg-gray-800 text-white py-8">
+        <div className="container px-4">
+          <div className="flex justify-between items-center flex-wrap">
+            {/* Footer Text */}
+            <div className="text-center md:text-left">
+              <p>© {new Date().getFullYear()} UK Digital Marketing Agency — All rights reserved.</p>
+              <p className="text-gray-400 text-sm">Made for UK businesses • SEO-first design</p>
+            </div>
 
+            {/* Social Media Links */}
+            <div className="flex space-x-6 justify-center md:justify-end mt-4 md:mt-0">
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-500">
+                <FontAwesomeIcon icon={faFacebook} size="lg" />
+              </a>
+              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400">
+                <FontAwesomeIcon icon={faTwitter} size="lg" />
+              </a>
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-600">
+                <FontAwesomeIcon icon={faLinkedin} size="lg" />
+              </a>
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pink-500">
+                <FontAwesomeIcon icon={faInstagram} size="lg" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </>
+  );
+}
