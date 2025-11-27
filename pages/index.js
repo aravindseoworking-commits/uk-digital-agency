@@ -1,13 +1,16 @@
-import SeoHead from '../components/SeoHead'
-import ServiceCard from '../components/ServiceCard'
-import Testimonial from '../components/Testimonial'
-import CaseStudyCard from '../components/CaseStudyCard'
-import PricingTable from '../components/PricingTable'
+import SeoHead from '../components/SeoHead';
+import ServiceCard from '../components/ServiceCard';
+import Testimonial from '../components/Testimonial';
+import CaseStudyCard from '../components/CaseStudyCard';
+import PricingTable from '../components/PricingTable';
+import Header from '../components/Header';
 
-export default function Home(){
+export default function Home() {
   return (
     <>
       <SeoHead title="UK Digital Marketing Agency | SEO & PPC" description="Professional UK digital marketing agency — SEO, PPC, Content, GEO marketing & web dev." />
+      <Header /> {/* Include the Header Component */}
+
       <main className="container">
         {/* HERO */}
         <section className="hero">
@@ -16,20 +19,20 @@ export default function Home(){
             <p>We help UK businesses grow with advanced SEO, PPC, content strategy & GEO targeted marketing.</p>
             <a href="#contact"><button className="cta">Get Free Consultation</button></a>
           </div>
-          <img src="/hero-marketing.jpg" alt="Digital Marketing UK" className="hero-img"/>
+          <img src="/images/hero-marketing.jpg" alt="Digital Marketing UK" className="hero-img"/>
         </section>
 
         {/* SERVICES */}
         <section className="services">
           <h2>Our Core Digital Services</h2>
           <div className="grid">
-            <ServiceCard title="Advanced SEO" icon="/seo.png" text="Technical SEO, On-Page SEO, Schema, GEO SEO."/>
-            <ServiceCard title="PPC Ads" icon="/ppc.png" text="Google Ads, Meta Ads & lead generation."/>
-            <ServiceCard title="Branding" icon="/branding.png" text="Brand strategy & identity."/>
-            <ServiceCard title="Web Development" icon="/web.png" text="High-performance, fast-loading websites."/>
-            <ServiceCard title="Social Media" icon="/smm.png" text="Content, management & growth."/>
-            <ServiceCard title="Local GEO SEO" icon="/geo.png" text="City & region-based visibility."/>
-            <ServiceCard title="Content Marketing" icon="/content.png" text="Unique blog content & campaigns."/>
+            <ServiceCard title="Advanced SEO" icon="/images/seo.png" text="Technical SEO, On-Page SEO, Schema, GEO SEO."/>
+            <ServiceCard title="PPC Ads" icon="/images/ppc.png" text="Google Ads, Meta Ads & lead generation."/>
+            <ServiceCard title="Branding" icon="/images/branding.png" text="Brand strategy & identity."/>
+            <ServiceCard title="Web Development" icon="/images/web.png" text="High-performance, fast-loading websites."/>
+            <ServiceCard title="Social Media" icon="/images/smm.png" text="Content, management & growth."/>
+            <ServiceCard title="Local GEO SEO" icon="/images/geo.png" text="City & region-based visibility."/>
+            <ServiceCard title="Content Marketing" icon="/images/content.png" text="Unique blog content & campaigns."/>
           </div>
         </section>
 
@@ -55,12 +58,12 @@ export default function Home(){
           <h2>Selected Work</h2>
           <div className="portfolio-grid">
             <div className="portfolio-item card">
-              <img src="/portfolio-1.jpg" alt="project"/>
+              <img src="/images/portfolio-1.jpg" alt="project"/>
               <h4>Local Retailer SEO</h4>
               <p style={{color:'#6b7280'}}>Grew organic traffic 120% in 6 months for a London-based retailer.</p>
             </div>
             <div className="portfolio-item card">
-              <img src="/portfolio-1.jpg" alt="project"/>
+              <img src="/images/portfolio-1.jpg" alt="project"/>
               <h4>PPC Lead Gen</h4>
               <p style={{color:'#6b7280'}}>Reduced cost-per-lead by 38% for an e-commerce client.</p>
             </div>
@@ -71,8 +74,8 @@ export default function Home(){
         <section className="case-list">
           <h2>Case Studies</h2>
           <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(260px,1fr))',gap:16}}>
-            <CaseStudyCard title="London Cafe — Local SEO" summary="Local listings + GEO landing pages increased footfall 22%." img="/portfolio-1.jpg"/>
-            <CaseStudyCard title="E-Commerce PPC" summary="Optimised campaigns with ROAS 5.2x." img="/portfolio-1.jpg"/>
+            <CaseStudyCard title="London Cafe — Local SEO" summary="Local listings + GEO landing pages increased footfall 22%." img="/images/portfolio-1.jpg"/>
+            <CaseStudyCard title="E-Commerce PPC" summary="Optimised campaigns with ROAS 5.2x." img="/images/portfolio-1.jpg"/>
           </div>
         </section>
 
@@ -131,12 +134,5 @@ export default function Home(){
         <footer>
           <div className="container" style={{padding:'0 24px'}}>
             <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',flexWrap:'wrap'}}>
-              <div>© {new Date().getFullYear()} UK Digital Marketing Agency — All rights reserved.</div>
-              <div style={{color:'#6b7280'}}>Made for UK businesses • SEO-first design</div>
-            </div>
-          </div>
-        </footer>
-      </main>
-    </>
-  )
-}
+              <div>© {new Date().getFull
+
